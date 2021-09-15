@@ -1,0 +1,193 @@
+
+/*****Media Query********/
+
+@media screen and (max-width:1024px) {
+    .login-box {
+        background: rgba(255, 255, 255, 0.9);
+        margin: 30px 40px;
+    }
+    .sign-up-box {
+        padding: 65px 30px;
+    }
+    .upper-sec {
+        padding: 40px 10px 40px 0px;
+    }
+    .mid-sec {
+        padding: 30px 10px 30px 0px;
+    }
+    .otp-sec {
+        padding: 50px 0 25px 0;
+    }
+    .product-fulldesc p {
+        width: 75%;
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .login-box {
+        margin: 30px 0px;
+    }
+    .adv-box {
+        padding: 0px 20px 0px 20px;
+    }
+    .sign-up-box {
+        padding: 55px 20px;
+    }
+    .upper-sec {
+        padding: 30px 10px 30px 0px;
+    }
+    .mid-sec {
+        padding: 20px 10px 20px 0px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    body {
+        padding-top: 80px;
+    }
+    .login-box {
+        margin: 30px 125px;
+    }
+    .adv-box {
+        float: left;
+        width: 100%;
+    }
+    .sign-up-box {
+        float: left;
+        width: 100%;
+    }
+    .org-form .form-group {
+        margin-bottom: 30px;
+    }
+    .sign-up-box {
+        padding: 20px 20px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .input-text {
+        margin-bottom: 8px;
+    }
+    .form-buttons {
+        text-align: center;
+    }
+    .form-buttons .btn {
+        font-size: 13px;
+        font-weight: 600;
+        height: auto;
+        min-width: 100px;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+    .help-block {
+        margin-bottom: 10px;
+    }
+    .page-heading {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    .product-list-wrapper {
+        display: block;
+        width: 80%;
+        background: #fff;
+        margin: 5% 10%;
+        float: left;
+    }
+    .box {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        float: left;
+        padding: 25px 0;
+    }
+    .pricing-details-box {
+        padding: 0;
+    }
+    ul.pricing-content li {
+        padding: 15px 0;
+    }
+    .no-counts,
+    .rates {
+        width: 100%;
+        float: left;
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    /***Order-Details****/
+    .order-forms-details li,
+    .col-width-20 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .product-fulldesc p {
+        width: 100%;
+    }
+    .unit-price {
+        padding-top: 0;
+    }
+    .selected-subs-details,
+    .total-amount {
+        margin-bottom: 15px;
+    }
+    .product-fulldesc p,
+    .product-fulldesc .total-text,
+    .product-fulldesc .amount {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:667px) {
+    .login-box {
+        margin: 30px 100px;
+    }
+    .paypal-img {
+        display: inline-block;
+        margin-left: 5px;
+        box-sizing: border-box;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .logo>li>a {
+        padding: 15px;
+    }
+    .logo>li:nth-child(2)>a {
+        padding: 15px 5px;
+    }
+    .logo>li:not(:first-child):before {
+        margin-left: -12px;
+        top: 30%;
+        background: rgba(102, 102, 102, 0.3);
+        width: 1px;
+        height: 60%;
+    }
+    .logo img {
+        /* height: 30px; */
+    }
+    .brand-name {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 55px;
+    }
+    .login-box {
+        margin: 30px 10px;
+    }
+    /*Order-Confirmation*/
+    .thankyou-text {
+        color: #333333;
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .brand-name {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 55px;
+    }
+}

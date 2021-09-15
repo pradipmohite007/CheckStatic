@@ -1,0 +1,59 @@
+window.onload = function(){
+ 	updateBrandingTheme(); //v1.2
+	
+	var payNowButton = document.getElementById('payNowButton');
+	if(payNowButton){
+		showHideVisibility(payNowButton, false);
+	}
+}
+
+function enableDisablePayNowButton(currentId){
+	var payNowButton = document.getElementById('payNowButton');
+	var termAndConditionChk = document.getElementById(currentId);
+	if(payNowButton){
+		if(termAndConditionChk.checked){
+			showHideVisibility(payNowButton, true);
+		}else{
+			showHideVisibility(payNowButton, false);
+		}
+	}
+	UpdatePricingInApex();
+}
+
+function showHideVisibility(htmlElment, isVisible){
+	if(isVisible == true){
+		htmlElment.style.display='';
+	}
+	else if(isVisible == false){
+		htmlElment.style.display='none';
+	}
+}
+	//v1.2 start
+	//function UpdateRecurringPaymentInJavascript(){
+	//	ChangeRecurringPaymentMode();
+	//} 
+	//v1.2 ends
+function verifyPayNowButton(){
+	var termAndConditionChk = $("[id$=termAndConditionChk]").is(':checked');
+	var payNowButton = document.getElementById('payNowButton');
+	if(payNowButton){
+		if(termAndConditionChk){
+			showHideVisibility(payNowButton, true);
+		}else{
+			showHideVisibility(payNowButton, false);
+		}
+	}
+}
+function updateLicenseRequest(){
+	Visualforce.remoting.Manager.invokeAction(UpdateLicenseRequest,
+		 licenseRequestId, isRecurring, paymentGatewayId,  
+		 function(result, event) {                  
+			 var res = JSON.parse(result);
+			 if(res){ 
+			 } else {
+			 }
+		 }, {
+			 escape:false
+		 }
+	 );
+}

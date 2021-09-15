@@ -1,0 +1,1519 @@
+@font-face {
+    font-family: 'Salesforce Sans';
+    src: url("../fonts/SalesforceSans-Light.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-Light.woff") format("woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Salesforce Sans';
+    src: url("../fonts/SalesforceSans-LightItalic.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-LightItalic.woff") format("woff");
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Salesforce Sans';
+    src: url("../fonts/SalesforceSans-Regular.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-Regular.woff") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Salesforce Sans';
+    src: url("../fonts/SalesforceSans-Italic.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-Italic.woff") format("woff");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Salesforce Sans';
+    src: url("../fonts/SalesforceSans-Bold.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Salesforce Sans';
+    src: url("../fonts/SalesforceSans-BoldItalic.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-BoldItalic.woff") format("woff");
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?345ja0');
+    src: url('../fonts/icomoon.eot?345ja0#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?345ja0') format('truetype'), url('../fonts/icomoon.woff?345ja0') format('woff'), url('../fonts/icomoon.svg?345ja0#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-email:before {
+    content: "\e900";
+}
+
+.icon-OTP:before {
+    content: "\e901";
+}
+
+.icon-PDF:before {
+    content: "\e902";
+}
+
+.icon-selected:before {
+    content: "\e903";
+}
+
+.otp-icons {
+    font-size: 40px;
+    color: #17a508;
+}
+
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    font-size: 14px;
+    background: #EEECEE;
+    line-height: 1.5;
+    padding-top: 69px;
+    padding-bottom: 40px;
+    position: relative;
+    color: #000;
+    position: relative;
+    min-height: 100%;
+    font-weight: 400;
+    font-style: normal;
+    overflow: auto !important;
+}
+.warningM3 .msgIcon, .warningMedium {
+    margin-top: 33px !important;
+    margin-left: 25px !important;
+}
+img {
+    max-width: 46%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: block;
+	text-align: center;
+}
+ul li{
+	margin:0;
+}
+a:focus,
+a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+.padd-5 {
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+
+.offset-top-5 {
+    margin-top: 5px;
+}
+
+.offset-top-10 {
+    margin-top: 10px;
+}
+
+.offset-top-15 {
+    margin-top: 15px;
+}
+
+.offset-top-20 {
+    margin-top: 20px;
+}
+
+.offset-top-25 {
+    margin-top: 25px;
+}
+
+.offset-top-30 {
+    margin-top: 30px;
+}
+
+.offset-top-40 {
+    margin-top: 40px;
+}
+
+.offset-top-50 {
+    margin-top: 50px;
+}
+
+.disabled{
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+    pointer-events:none;
+}
+
+/*ul {
+    margin: 0;
+    padding: 0px;
+    list-style-type: none;
+}*/
+
+
+/****Custom css starts***/
+
+.outer:after,
+.outer:before {
+    display: table;
+    content: "";
+}
+
+.outer:after {
+    clear: both;
+}
+
+.form-control {
+    height: 40px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #333;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cbcbcb;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+.org-form {
+    margin-bottom: 30px;
+}
+
+.input-label label {
+    color: #555;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.input-label strong {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.input-text {
+    overflow: hidden;
+}
+
+.org-form .form-group {
+    margin-bottom: 10px;
+}
+
+.org-form .row,
+.subs-form .row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.org-form .col-sm-1,
+.org-form .col-sm-2,
+.org-form .col-sm-3,
+.org-form .col-sm-4,
+.org-form .col-sm-5,
+.org-form .col-sm-6,
+.org-form .col-sm-7,
+.org-form .col-sm-8,
+.org-form .col-sm-9,
+.org-form .col-sm-10,
+.org-form .col-sm-11,
+.org-form .col-sm-12,
+.org-form .col-xs-1,
+.org-form .col-xs-2,
+.org-form .col-xs-3,
+.org-form .col-xs-4,
+.org-form .col-xs-5,
+.org-form .col-xs-6,
+.org-form .col-xs-7,
+.org-form .col-xs-8,
+.org-form .col-xs-9,
+.org-form .col-xs-10,
+.org-form .col-xs-11,
+.org-form .col-xs-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.form-buttons {
+    text-align: right;
+}
+
+.form-buttons .btn {
+    font-size: 14px;
+    min-width: 110px;
+    height: 40px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 3px;
+    transition: 200ms ease-in 0s;
+    -ms-transition: 200ms ease-in 0s;
+    -moz-transition: 200ms ease-in 0s;
+    -webkit-transition: 200ms ease-in 0s;
+     margin: 0 10px;
+}
+
+.has-error .checkbox,
+.has-error .checkbox-inline,
+.has-error .control-label,
+.has-error .help-block,
+.has-error .radio,
+.has-error .radio-inline,
+.has-error.checkbox label,
+.has-error.checkbox-inline label,
+.has-error.radio label,
+.has-error.radio-inline label {
+    color: #E35E60;
+}
+
+.has-error .form-control {
+    border-color: #E35E60;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.has-error .form-control:focus {
+    border-color: #E35E60;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #E35E60;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #E35E60;
+}
+
+.help-block {
+    margin-bottom: 0;
+}
+
+.btn.cancel-btn:hover,
+.btn.cancel-btn:focus {
+   /* border-radius: 3px;
+    background: #666666 !important;
+    color: #fff !important;
+    background-position:none;*/
+}
+
+.btn.cancel-btn {
+    border-radius: 3px;
+    background: transparent !important;
+    color:#0C9D98 !important;
+	border:1px solid #0C9D98;
+}
+
+.btn.save-btn {
+    border-radius: 3px;
+    background: #0C9D98;
+    color: #fff !important;
+}
+
+.btn.save-btn:hover,
+.btn.save-btn:focus {
+    border-radius: 3px;
+   /* background: #0C9D98 !important;*/
+    color: #fff !important;
+}
+
+.btn.save-btn.finish-btn{
+	min-width: 130px;
+    height: 41px;
+}
+
+/****Header Css Starts*****/
+
+.fixed-header-bg {
+    background: #ffffff;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.21);
+    border-color: #fff;
+	margin-bottom:0;
+	
+}
+
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand {
+    height: 66px;
+    margin-left: 0;
+}
+
+.logo {
+    display: block;
+    font-size: 40px;
+    text-transform: capitalize;
+    height: 66px;
+    float: left;
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+
+.logo img {
+	max-height:60px;
+	/* height:auto; */
+}
+
+.logo>li:not(:first-child):before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20%;
+    background: rgba(102, 102, 102, 0.3);
+    width: 1px;
+    height: 70%;
+}
+
+.logo>li {
+    vertical-align: middle;
+	/*margin-top:1%;*/
+}
+
+.logo>li>a {
+    padding: 15px 20px;
+}
+
+.logo>li>span>a {
+    padding: 15px 20px;
+}
+
+.brand-name {
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #666666;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+}
+
+.brand-name:hover,
+.brand-name:focus {
+    color: #666;
+}
+
+
+/****Header Css Ends*****/
+
+
+/*Login Box*/
+
+.login-box {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 30px 125px 30px;
+}
+
+.adv-box {
+    float: left;
+    width: 50%;
+    background: rgb(12, 157, 152);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.25);
+    padding: 0px 30px 0px 30px;
+    min-height: 540px;
+}
+
+.upper-sec {
+    width: 100%;
+    display: block;
+    padding: 50px 10px 5px 0px;
+}
+
+.mid-sec {
+    width: 100%;
+    display: block;
+    padding:5px 10px 20px 0px;
+}
+
+.bottom-sec {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.adv-box h3 {
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.adv-box span {
+    display: block;
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+.adv-box p.info-text {
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.custom-breadcum {
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.contact-us {
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.contact-us a {
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-align: left;
+}
+
+
+/************Organization Form Css Starts***************/
+
+.sign-up-box {
+    float: left;
+    width: 50%;
+    padding: 65px 50px;
+    margin: 0px;
+}
+
+.otp-sec {
+    padding: 60px 0 30px 0;
+}
+
+.otp-notify {
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #666666;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+}
+
+.no-padding {
+	padding: 0;
+}
+/*********Organization Form Css Ends*********************/
+
+
+/************Choose-Product Css Starts***************/
+
+.page-heading {
+    font-family: inherit;
+    color: #0C9D98;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-top:25px;
+	margin-bottom:0;
+    /*padding-bottom: 15px;*/
+    /*border-bottom: 1px solid rgba(207, 207, 207, 0.7);*/
+}
+
+.order-pageheading{
+	 border-bottom: none;
+}
+
+.prod-listing>li {
+    margin-bottom: 15px;
+}
+
+.product-list-wrapper {
+    display: table;
+    width: 80%;
+    height: 100%;
+    background: #fff;
+	margin: 0 auto;
+}
+
+.product-list-wrapper:hover {
+    box-shadow: 0 0px 1px 3px rgba(0, 0, 0, .15);
+}
+
+.product-list-wrapper-heading {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: none;
+    text-align: left;
+}
+.text-left {
+    text-align: left !important;
+}
+
+.box {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.product-logo-box {
+    width: 30%;
+        padding: 20px 0;
+}
+
+.product-logo {
+    
+}
+
+.product-name {
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #333333;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 10px 0;
+    display: block;
+}
+
+.pricing-details-box {
+    vertical-align: middle;
+    text-align: left;
+    width: 45%;
+    border-right: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+    background: rgba(239, 239, 239, 0.5);
+    padding: 0;
+}
+
+.subscription-box {
+    width: 25%;
+}
+
+.subscription-box .form-buttons,
+.forms-actions .form-buttons {
+    text-align: center;
+}
+
+.subscription-box .form-buttons .btn {
+    min-width: 150px;
+    height: 42px;
+}
+
+.forms-actions {
+    margin: 8px auto;
+}
+
+.no-counts {
+    width: 50%;
+    float: left;
+    padding-left: 70px;
+    text-align: left;
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.rates {
+    width: 50%;
+    text-align: left;
+    float: left;
+    padding: 0;
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+ul.pricing-content {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-bottom: 0;
+}
+
+ul.pricing-content > li {
+    /*display: inline-block;*/
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #dfdfdf;
+    padding: 8px 0px;
+}
+
+ul.pricing-content >li:last-child {
+    border-bottom: none;
+}
+
+
+/*Choose-Product  Css Ends*/
+
+
+/*Order-Details Css Starts*/
+
+.order-forms {
+    background: #fff;
+    width: 100%;
+    padding: 10px;
+    min-height: 545px;
+    margin-bottom: 30px;
+    /*border: 1px solid #000;*/
+}
+
+.infobox {
+    /*margin-bottom: 25px;*/
+}
+
+.order-forms h3.forms-title {
+    border-bottom: 1px solid #D6D6D6;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    padding-bottom: 8px;
+     font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.ribbon-content:before {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: 100%;
+    left: 0;
+    border-bottom: 10px solid #666666;
+    border-left: 15px solid transparent;
+    z-index: -1;
+}
+
+.ribbon-content:after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: 100%;
+    right: 0px;
+    border-bottom: 10px solid #666666;
+    border-right: 15px solid transparent;
+    z-index: -1;
+}
+
+.order-forms-details {
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.order-forms-details li {
+    width: 24%;
+    float: left;
+    overflow: hidden;
+}
+
+.order-forms-details label,
+.order-forms-details span {
+    display: block;
+}
+
+.order-forms-details label {
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.order-forms-details span {
+     font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.sub-model-container {
+    background: #e4e4e4;
+    height: auto;
+    margin: 25px -22px;
+    position: relative;
+}
+
+span.leftEdge {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: 100%;
+    top: -10px;
+    left: 0;
+    border-bottom: 10px solid #666666;
+    border-left: 15px solid transparent;
+    z-index: -1;
+}
+
+span.rightEdge {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: 100%;
+    right: 0px;
+    top: -10px;
+    border-bottom: 10px solid #666666;
+    border-right: 15px solid transparent;
+    z-index: -1;
+}
+
+.product-desc h3.forms-title {
+    padding: 5px 0px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.product-desc .more-link{
+	margin-top:14px;
+}
+.subs-form {
+    padding: 0 36px;
+}
+
+.col-width-20 {
+    width: 20%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    position: relative;
+}
+.col-width-14{
+	width:14%;
+}
+.unit-price {
+    display: block;
+    padding-top: 10px;
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.product-fulldesc {
+    padding: 20px 15px 20px 12px;
+    background: #DBD9DA;
+}
+
+.product-fulldesc p {
+    width: 63%;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.product-fulldesc .total-text {
+    display: block;
+   font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    margin-bottom: 0px;
+}
+
+.product-fulldesc .amount {
+    display: block;
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #333333;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: right;
+}
+.product-fulldesc .selected-subs-details p{
+	padding-left:10px;
+}
+#userInputDiv{
+	/*width:14%;*/
+}
+.container1 #userInputDiv{
+	width:25%;
+}
+/*phase changes  */
+.rvw-details.order-forms-details li{
+	width:30%;
+}
+.help-block a{
+	text-decoration:none;
+	cursor:pointer;
+}
+.btn.paid-through-btn{
+	border:0;
+	background-color:none;
+}
+.order-forms-details.org-details li{
+	width:45%;
+}
+.order-forms-details.curr-license li{
+	width:25%;
+}
+.subscribe .col-width-20{
+	width:25%;
+	padding: 0 15px 0 0;
+}
+.subscribe .input-text{
+	width:70%;
+}
+
+
+/************Order-Details Css Ends***************/
+
+
+/*orderConfirmation Css Starts*/
+
+.thankyou-text {
+    color: #333333;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.icon-tick {
+    color: #1ca40e;
+}
+.thanks-tick{
+	    font-size: 25px;
+        vertical-align: middle;
+}
+.table-bordered .confirm-table{
+    border: 1px solid #b6b6b6;
+}
+
+.table.confirm-table thead {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b6b6b6;
+    background: #e4e4e4;
+}
+
+.table.confirm-table thead tr th {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b6b6b6;
+    text-align: center;
+}
+
+.table.confirm-table tbody tr td {
+    text-align: center;
+    padding: 15px 8px;
+	vertical-align: middle;
+}
+
+.table.confirm-table tbody tr:last-child {
+    background: #666666;
+}
+
+.table.confirm-table tbody tr:last-child td {
+    text-align: right;
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.table.confirm-table tbody tr:last-child td .total-amt {
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.paid-through-btn {
+    border-radius: 6px;
+   /* border-style: solid;
+    border-width: 1px;
+    border-color: #e4e4e4;*/
+    box-sizing: border-box;
+    background: #ffffff;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: none !important;
+}
+
+.paypal-img {
+    display: inline-block;
+    margin-left: 5px;
+    height: 25px;
+}
+
+.control {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.control .termsnconditions {
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #0075e2;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline !important;
+    text-align: left;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control__indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #d3d3d3;
+}
+
+.control:hover input~.control__indicator,
+.control input:focus~.control__indicator {
+    background: #fff;
+}
+
+.control input:checked~.control__indicator {
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+}
+
+.control:hover input:not([disabled]):checked~.control__indicator,
+.control input:checked:focus~.control__indicator {
+    background: #fff;
+}
+
+.control input:disabled~.control__indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.control__indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.control input:checked~.control__indicator:after {
+    display: block;
+}
+
+.control--checkbox .control__indicator:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid #1ca40e;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.control--checkbox input:disabled~.control__indicator:after {
+    border-color: #7b7b7b;
+}
+
+.horizontal-list {
+    display:inline-block;
+	width:100%;
+    /*margin: 25px auto;*/
+	margin:8px auto;
+}
+
+.payment-options {
+    text-align: center;
+    vertical-align: middle;
+    clear: both;
+}
+
+
+/*.payment-options {
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+}*/
+
+.payment-options li {
+    position: relative;
+    display: inline-block;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b6b6b6;
+    box-sizing: border-box;
+    background: #ffffff;
+    width: 172px;
+    height: 75px;
+    vertical-align: middle;
+    margin: 10px 15px;
+}
+
+.payment-options li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.payment-options li.active-selected {
+    border-color: #25a10c;
+}
+
+.icon-right-tick {
+    visibility: hidden;
+    position: absolute;
+    right: -10px;
+    top: -7px;
+    color: #25a10c;
+    font-size: 18px;
+}
+
+.payment-options li.active-selected .icon-right-tick {
+    visibility: visible;
+}
+
+.rightalign-icons {
+    color: #666666;
+    font-size: 20px;
+    display: block;
+    box-sizing: border-box;
+    float: right;
+}
+
+h3.forms-title a:not(:first-child) span {
+    margin-right: 20px;
+}
+
+.recurringId,.nonrecurringId{
+	display:inline-block;
+}
+
+
+/**OrderConfirmation Css Ends*/
+
+
+/*******Footer Css Starts *******/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    background: #d6d6d6;
+    height:30px;
+}
+
+.copyRight-text {
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    color: #333333;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+
+/*******Footer Css Ends *******/
+.container1 .login-box {
+    margin:-8px 20px 15px;
+}
+.container1 .sign-up-box  .col-sm-5{
+width: 39%;
+    float: left;
+}
+  .container1 .sign-up-box  .col-sm-7{
+	  width: 61%;
+    float: left;
+}
+.container1 .outer .sign-up-box .form-buttons .btn{
+	margin:0;
+}
+.container1 .sign-up-box{
+	padding:65px 20px;
+}
+.container1 .page-heading{
+	margin:0;
+	padding:25px 0;
+}
+.container1 .col-width-20{
+	width:25%;
+	padding:0 8px 0 0;
+}
+.container1{
+	overflow-x:hidden;
+}
+.container1 .outer{
+	padding:0 40px;
+}
+.container1 .login-box .outer, .container1 .outer.infobox,.container1 .outer.product-desc{
+	padding:0;
+}
+.container1 .outer.product-fulldesc {
+    padding: 20px 15px 20px 12px;
+}
+.container1 .outer.product-fulldesc .selected-subs-details {
+	float: left;
+    width: 60%;
+}
+.container1 .outer .form-buttons .btn{
+	margin:0 2px;
+}
+.container1 .order-forms-details li {
+    width: 25%;
+    padding: 0 5px 0 0;
+}
+.container1 .order-information .order-forms-details li{
+	width:48%;
+}
+.waitingSearchDiv{
+	z-index:9999;
+}
+.container1 .order-forms{
+	margin-bottom:0px;
+}
+.container1 .input-label label{
+	font-weight:normal;
+}
+.container1  .sub-model-container{
+	margin-bottom:6px;
+}
+.org-info-details > input ,.subs-form > input{
+    margin-right: 8px;
+}
+.container1 .col-md-12.offset-top-25{
+	margin:0;
+}
+
+/*subscription plan radio options */
+.subscription-radio-block{
+	margin-bottom:15px;
+}
+.subscription-radio-block td{
+	padding-right:20px;	
+	font-family:"Salesforce Sans", Arial, sans-serif;
+}
+.subscription-radio-block td input[type="radio"]{
+	margin-right:6px;
+	
+}
+.subscription-radio-block td label{
+	font-weight: 600;
+    color: #555;
+}
+/*  payment-details table */
+.payment-details .table-header,.payment-details .table-row{
+	display:flex;
+	justify-content:flex-start;
+	flex-direction:row;
+	align-items: stretch;
+}
+.payment-details .table-header>div{
+	font-weight:600;
+	border-top:1px solid #000;
+	border-right:1px solid #000;
+	border-bottom:1px solid #000;
+	padding: 8px 0px;
+    min-width: 142px;	
+}
+.payment-details .table-header>div:first-child,.payment-details .table-row>div:first-child{
+	border-left:1px solid #000;
+}
+.payment-details .table-row>div{
+	padding: 8px 0px;
+    min-width: 142px;
+	border-bottom:1px solid #000;
+	border-right:1px solid #000;
+}
+.payment-details .table-body{
+	max-height:400px;
+	overflow-y:auto;
+}
+@media(max-width:1400px) {
+
+.container1 .outer{
+	padding:0 35px;
+}
+.brand-name{
+	font-size:22px;
+}
+.container1 .order-forms-details span, .unit-price{
+	font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+}
+.container1 .order-forms{
+	padding:5px;
+}
+.container1 .login-box {
+    margin: 0px 10px 15px;
+}
+.container1 .login-box .form-buttons .btn{
+	min-width:100%;
+}
+
+
+
+@media screen and (max-width:1024px) {
+    .login-box {
+        background: rgba(255, 255, 255, 0.9);
+        margin: 30px 40px;
+    }
+    .sign-up-box {
+        padding: 65px 30px;
+    }
+    .upper-sec {
+        padding: 40px 10px 40px 0px;
+    }
+    .mid-sec {
+        padding: 30px 10px 30px 0px;
+    }
+    .otp-sec {
+        padding: 50px 0 25px 0;
+    }
+    .product-fulldesc p {
+        width: 75%;
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .login-box {
+        margin: 30px 0px;
+    }
+    .adv-box {
+        padding: 0px 20px 0px 20px;
+    }
+    .sign-up-box {
+        padding: 55px 20px;
+    }
+    .upper-sec {
+        padding: 30px 10px 30px 0px;
+    }
+    .mid-sec {
+        padding: 20px 10px 20px 0px;
+    }
+	
+}
+
+@media screen and (max-width:767px) {
+    body {
+        padding-top: 69px;
+    }
+    /* .login-box {
+        margin: 30px 125px;
+    }
+    .adv-box {
+        float: left;
+        width: 100%;
+    }
+    .sign-up-box {
+        float: left;
+        width: 100%;
+    }
+    .org-form .form-group {
+        margin-bottom: 30px;
+    }
+    .sign-up-box {
+        padding: 20px 20px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    } */
+    .input-text {
+        margin-bottom: 8px;
+    }
+    .form-buttons {
+        text-align: center;
+    }
+    .form-buttons .btn {
+        font-size: 13px;
+        font-weight: 600;
+        height: auto;
+        min-width: 100px;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+    .help-block {
+        margin-bottom: 10px;
+    }
+    .page-heading {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    
+    /* .product-list-wrapper {
+        display: block;
+        width: 80%;
+        background: #fff;
+        margin: 5% 10%;
+        float: left;
+    }
+    .box {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        float: left;
+        padding: 25px 0;
+    }
+    .pricing-details-box {
+        padding: 0;
+    } */
+    ul.pricing-content li {
+        padding: 15px 0;
+    }
+    /* .no-counts,
+    .rates {
+        width: 100%;
+        float: left;
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 8px;
+    } */
+    /***Order-Details****/
+    .order-forms-details li,
+    .col-width-20,.subscribe .col-width-20,.order-forms-details.org-details li,.order-forms-details.curr-license li ,.container1 #userInputDiv,
+	.rvw-details.order-forms-details li{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+	
+	.col-width-20{
+		height:75px;
+	}
+	
+    /* .product-fulldesc p {
+        width: 100%;
+    }
+    .unit-price {
+        padding-top: 0;
+    }
+    .selected-subs-details,
+    .total-amount {
+        margin-bottom: 15px;
+    }
+    .product-fulldesc p,
+    .product-fulldesc .total-text,
+    .product-fulldesc .amount {
+        text-align: center;
+    } */
+}
+@media screen and (max-width:600px){
+	 .order-forms-details li,
+    .col-width-20,.subscribe .col-width-20,.order-forms-details.org-details li,.order-forms-details.curr-license li ,.container1 #userInputDiv,
+	.rvw-details.order-forms-details li{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:667px) {
+    /* .login-box {
+        margin: 30px 100px;
+    }*/
+    .paypal-img {
+        display: inline-block;
+        margin-left: 5px;
+        box-sizing: border-box;
+        height: 20px;
+     }
+}
+
+@media screen and (max-width:480px) {
+    .logo>li>a {
+        padding: 15px;
+    }
+    .logo>li:nth-child(2)>a {
+        padding: 15px 5px;
+    }
+    .logo>li:not(:first-child):before {
+        margin-left: -12px;
+        top: 30%;
+        background: rgba(102, 102, 102, 0.3);
+        width: 1px;
+        height: 60%;
+    }
+    .logo img {
+        /* height: 30px; */
+    }
+    .brand-name {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 55px;
+    }
+    .login-box {
+        margin: 30px 10px;
+    }
+    /*Order-Confirmation*/
+    .thankyou-text {
+        color: #333333;
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .brand-name {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 55px;
+    }
+}

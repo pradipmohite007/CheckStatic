@@ -1,0 +1,78 @@
+function getUrlVars() {
+	var vars = {};
+	var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,    
+	function(m,key,value) {
+	  vars[key] = value;
+	});
+	return vars;
+}
+getSubcribedListOfProducts();
+function getSubcribedListOfProducts(){
+
+	Visualforce.remoting.Manager.invokeAction(getInstalledProduct, 
+	OrgID,
+	function(result1, event) {
+		if(result1){  
+			var result = parseResult(result1);                  
+			 productHTML +='<ul class="list-unstyled prod-listing">'+
+							'<li class="hidden-xs">'+
+				   ' <div class="product-list-wrapper-heading">'+
+					  ' <div class="box text-left">'+
+							'<h4> '+productSelectionProductLabel+ ' &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h4>'+
+						'</div>'+
+						'<div class="box text-left">'+
+						 ' <h4>'+productSelectionTermsAndPricing+'</h4>'+
+						'</div>'+
+					   ' <div class="box">'+
+							'<div class="form-buttons" style="visibility:hidden;">'+
+								'<div class="input-label">'+
+									'<input type="submit" class="btn save-btn" value="'+productSelectionSubscribeButton+'" />'+
+								'</div>'+
+							'</div>'+
+						'</div>'+
+					'</div>'+
+				'</li>';
+			 for(var i=0; i<result.length;i++){
+				var licenseId = result[i].LicenseId;
+				productHTML += '<li>'+
+								'<div class="product-list-wrapper">'+
+									'<div class="box product-logo-box">'+
+										// False Positive - Here we are not doing URL encode for Product logo because Only Id will be returned from controller so no need to encode parameter
+										'<img src="'+communityURL+'/servlet/servlet.FileDownload?file='+result[i].ProductLogo+'" class="product-logo" />'+
+										'<h4 class="product-name">'+result[i].ProductName+'</h4>'+
+									'</div>'+
+										'<div class="box pricing-details-box">';
+										 productHTML += '<ul class="pricing-content list-unstyled">';
+										  for(var j=0;j<result[i].TermPrice.length;j++){
+													 productHTML += '<li>'+
+														'<div class="no-counts">'+result[i].TermPrice[j].Term + '</div>'+
+														'<div class="rates"> $'+result[i].TermPrice[j].Price + ' '+ result[i].TermPrice[j].description+'</div>'+
+													'</li>';
+												
+										  }
+											 productHTML +=  '</ul>';
+									productHTML +='</div>'+
+										'<div class="box subscription-box">'+
+											'<div class="form-buttons">'+
+												'<div class="input-label">'+
+													'<button style="background:'+brandColor+'" class="btn save-btn" value="'+productSelectionSubscribeButton+'" onclick="subscribeAction(\''+licenseId+'\')">'+productSelectionSubscribeButton+'</button>'+
+												'</div>'+
+											'</div>'+
+										'</div>'+
+								'</div>'+
+							 '</li>';
+				}
+			productHTML +='</ul>';
+			
+			document.getElementById('productList').innerHTML  = productHTML;
+			 
+		} else {
+		}
+	}
+);
+}
+
+function subscribeAction(LicenceId){
+	$("[id$=theHiddenInput]").prop("value",LicenceId);
+	Subscribe();
+}

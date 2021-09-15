@@ -1,0 +1,319 @@
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url("../fonts/SalesforceSans-Light.woff2?orgId=00D4p000000DueK") format("woff2"), url("../fonts/webfonts/SalesforceSans-Light.woff?orgId=00D4p000000DueK") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url("../fonts/SalesforceSans-Regular.woff2?orgId=00D4p000000DueK") format("woff2"), url("../fonts/webfonts/SalesforceSans-Regular.woff?orgId=00D4p000000DueK") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url("../fonts/SalesforceSans-Bold.woff2?orgId=00D4p000000DueK") format("woff2"), url("../fonts/webfonts/SalesforceSans-Bold.woff?orgId=00D4p000000DueK") format("woff");
+  font-weight: 700;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-text-size-adjust: 100% !important;
+  -ms-text-size-adjust: 100% !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-family: "Salesforce Sans", Arial, sans-serif;
+}
+
+a {
+  color: #33b9ff;
+  text-decoration: none;
+  text-decoration: none !important;
+}
+
+img {
+  border: 0 !important;
+  outline: none !important;
+}
+
+p {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+table {
+  border-collapse: collapse;
+  mso-table-lspace: 0px;
+  mso-table-rspace: 0px;
+  width: 100%;
+}
+
+td, a, span {
+  border-collapse: collapse;
+  mso-line-height-rule: exactly;
+}
+
+.ExternalClass * {
+  line-height: 100%;
+}
+
+center table {
+  width: 100% !important;
+}
+
+span.MsoHyperlink {
+  mso-style-priority: 99;
+  color: inherit;
+}
+
+span.MsoHyperlinkFollowed {
+  mso-style-priority: 99;
+  color: inherit;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 640px) {
+  td[class=hide] {
+    display: none;
+  }
+  
+  td[class=title] {
+    text-align: center !important;
+  }
+  
+  td[class=date] {
+    text-align: center !important;
+  }
+  
+  td[class=textcenter] {
+    text-align: center !important;
+    padding: 15px !important;
+  }
+  
+  table[class=em_main_table] {
+    width: 480px !important;
+  }
+  
+  td[class=flex-td] {
+    width: 48% !important;
+    display: inline-block;
+  }
+  
+  td[class=flex-td2] {
+    width: 100% !important;
+    display: inline;
+  }
+  
+  td[class=flex-td3] {
+    width: 100% !important;
+  }
+  
+  td[class=flex-td4] {
+    width: 100% !important;
+  }
+  
+  td[class=flex-td5] {
+    width: 31% !important;
+    display: inline-block;
+  }
+  
+  img[class=corner] {
+    width: 100%;
+  }
+  
+  table[class=em_wrapper] {
+    width: 100% !important;
+  }
+  
+  table[class=em_w_150] {
+    width: 220px !important;
+  }
+  
+  td[class=em_w_150] {
+    width: 220px !important;
+  }
+  
+  div[class=em_w_150_wrapper] img {
+    width: 220px !important;
+    height: auto !important;
+  }
+  
+  table[class=em_center], td[class=em_center] {
+    text-align: center !important;
+  }
+  
+  td[class=em_height] {
+    height: 20px !important;
+  }
+  
+  td[class=em_hide], br[class=em_hide], img[class=em_hide] {
+    display: none !important;
+  }
+  
+  td[class=em_pad] {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  td[class=em_top_pad] {
+    padding-top: 15px !important;
+  }
+  
+  td[class=em_top6] {
+    padding-top: 6px !important;
+  }
+  
+  td[class=em_bottom_pad] {
+    padding-bottom: 25px !important;
+  }
+  
+  td[class=em_img_wrapper] img, div[class=em_img_wrapper] img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  td[class=em_side] {
+    width: 15px !important;
+  }
+  
+  span[class=em_br] {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  table[class=em_main_table] {
+    width: 100% !important;
+  }
+  
+  td[class=title] {
+    text-align: center !important;
+  }
+  
+  td[class=hide] {
+    display: none;
+  }
+  
+  td[class=date] {
+    text-align: center !important;
+  }
+  
+  td[class=textcenter] {
+    text-align: center !important;
+    padding: 15px !important;
+  }
+  
+  td[class=flex-td] {
+    width: 48% !important;
+    display: inline-block;
+  }
+  
+  td[class=flex-td2] {
+    width: 100% !important;
+    display: inline;
+  }
+  
+  td[class=flex-td3] {
+    width: 100% !important;
+  }
+  
+  td[class=flex-td4] {
+    display: none;
+  }
+  
+  td[class=flex-td5] {
+    width: 100% !important;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  img[class=corner] {
+    width: 100%;
+  }
+  
+  table[class=em_wrapper] {
+    width: 100% !important;
+  }
+  
+  table[class=em_w_320] {
+    width: 320px !important;
+  }
+  
+  table[class=em_w_150] {
+    width: 150px !important;
+  }
+  
+  td[class=em_w_150] {
+    width: 150px !important;
+  }
+  
+  div[class=em_w_150_wrapper] img {
+    width: 150px !important;
+    height: auto !important;
+  }
+  
+  table[class=em_center], td[class=em_center] {
+    text-align: center !important;
+  }
+  
+  td[class=em_height] {
+    height: 20px !important;
+  }
+  
+  td[class=em_hide], br[class=em_hide], img[class=em_hide] {
+    display: none !important;
+  }
+  
+  td[class=em_pad] {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  td[class=em_top_pad] {
+    padding-top: 15px !important;
+  }
+  
+  td[class=em_top6] {
+    padding-top: 6px !important;
+  }
+  
+  td[class=em_bottom_pad] {
+    padding-bottom: 25px !important;
+  }
+  
+  td[class=em_img_wrapper] img, div[class=em_img_wrapper] img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  td[class=em_side] {
+    width: 15px !important;
+  }
+  
+  span[class=em_br] {
+    display: block !important;
+  }
+  
+  td[class=em_font17] {
+    font-size: 17px !important;
+    line-height: 20px !important;
+  }
+  
+  td[class=em_font16] {
+    font-size: 16px !important;
+    height: 35px !important;
+  }
+  
+  td[class=em_font14] {
+    font-size: 14px !important;
+    line-height: 17px !important;
+  }
+  
+  td[class=em_font12] {
+    font-size: 12px !important;
+    line-height: 15px !important;
+  }
+  
+  td[class=boxes_side_border] {
+    background-color: #fff !important;
+  }
+}

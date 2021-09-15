@@ -1,0 +1,14 @@
+$( ".fixed-header-bg" ).css( "background", headerColor );
+$( "footer" ).css( "background", footerColor );
+$( ".footerFontColor" ).css( "color", footerFontColor );
+$( ".brand-name" ).css( "color", headerTitleColor );
+$( ".headerFontColor" ).css( "color", headerFontColor );
+$( "body" ).css( "background", bodyBackgroundColor );
+$( ".page-heading" ).css("color", pageHeaderColor );
+$( ".adv-box" ).css( "background", brandColor );
+$( ".btn-branding" ).css( "background", brandColor );
+$( ".header-branding" ).css( "background", brandColor );
+$( ".product-name" ).css( "color", productName );
+$( ".content-text-color" ).css( "color", contentTextColor );
+$('.cancel-button-text').attr('style', cancelButtonTextStyle);
+$( ".cancel-button-border" ).css( "border", cancelButtonBorder, 'important' );
